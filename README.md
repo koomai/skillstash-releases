@@ -10,6 +10,17 @@ Download `SkillStash-arm64.dmg` from the latest release.
 
 Requires macOS 12 or later on Apple silicon.
 
+## First launch
+
+SkillStash is unsigned, so macOS says it "is damaged and can't be opened".
+After dragging it to Applications, run this in Terminal:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/SkillStash.app
+```
+
+Run it again after installing each new version.
+
 ## Issues
 
 Bugs, crashes and feature requests: [open an issue](https://github.com/koomai/skillstash-releases/issues/new).
